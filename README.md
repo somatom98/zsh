@@ -29,10 +29,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # download fonts (you need to install them)
-#
+wget https://github.com/somatom98/zsh/raw/main/fonts/MesloLGS%20NF%20Bold%20Italic.ttf
+wget https://github.com/somatom98/zsh/raw/main/fonts/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/somatom98/zsh/raw/main/fonts/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/somatom98/zsh/raw/main/fonts/MesloLGS%20NF%20Regular.ttf
+
+# clone zsh-autosuggestion
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # clone configuration
-#
+wget https://raw.githubusercontent.com/somatom98/zsh/main/.zshrc -P ~/
+wget https://raw.githubusercontent.com/somatom98/zsh/main/.p10k.zsh -P ~/
 ```
 
 

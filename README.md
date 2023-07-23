@@ -9,6 +9,9 @@ sudo dnf isntall zsh
 
 # Ubuntu
 sudo apt install zsh
+
+# Configure zsh as default terminal
+chsh -s $(which zsh)
 ```
 
 ### ohmyzsh
